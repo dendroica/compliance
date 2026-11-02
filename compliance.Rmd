@@ -1,0 +1,28 @@
+---
+title: "compliance"
+author: "Jess Gorzo"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#devtools::install_github("dendroica/mriptools")
+#devtools::update_packages("mriptools")
+library(mriptools)
+```
+
+## Recreational Fishery
+
+```{r cars}
+catch <- ReadCatch(
+  file.path(
+    "https://apps-st.fisheries.noaa.gov/st1/recreational/MRIP_Estimate_Data/CSV/Wave%20Level%20Estimate%20Downloads",
+    "mrip_catch_bywave_2025.csv"), 34, 1:6)
+
+catch <- catch[catch$COMMON=="WEAKFISH",]
+```
+
+* New Jersey landed `r sum(catch$LBS_AB1)` pounds of weakfish in their recreational fishery in 2024. 
+* New Jersey landed `r sum(catch$LANDING)` weakfish in their recreational fishery in 2024. 
+* New Jersey released `r sum(catch$ESTREL)` weakfish in their recreational fishery in 2024.
