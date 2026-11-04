@@ -1,5 +1,5 @@
 ---
-title: "sst compliance"
+title: "spotted seatrout rec"
 author: "Jess Gorzo"
 date: "`r Sys.Date()`"
 output: html_document
