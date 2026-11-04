@@ -2,7 +2,7 @@
 
 You need my .Renviron file to get the paths  
 
-* compliance.R: uses the wave level data that my “mriptools” R package runs on
+* x-compliance.Rmd: uses the wave level data that my “mriptools” R package runs on
 * weakfish-dbtrawl.R: the “index” data frame at the end is the YOY geometric mean
 * db.R: you must run this with R-4.1.3
 1. open powershell
