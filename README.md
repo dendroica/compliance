@@ -2,7 +2,7 @@
 
 You need my .Renviron file to get the paths  
 
-* <spp>-compliance.Rmd: Used to fill out the Recreational Fishery data for the compliance report
+* spp-compliance.Rmd: Used to fill out the Recreational Fishery data for the compliance report
 * weakfish-dbtrawl.R: the “index” data frame at the end is the YOY geometric mean
 * weakfish-dbtrawl25.R: this was a one-off to accommodate data received in Excel files rather than pull from the database, because these data weren't in the database yet by the time I needed them to complete the report in 2026
 * db.R: you must run this with R-4.1.3
