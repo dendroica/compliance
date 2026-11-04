@@ -1,5 +1,4 @@
 library(RODBC)
-
 #update filepath below with the current filename
 detrawl <- file.path(Sys.getenv("VIN"), "Delaware Bay Finfish Trawl Survey/DBTrawl1991-2025_10-01-2026.accdb")
 weakfish_trawl <- function(path_to_db, outfile) {
