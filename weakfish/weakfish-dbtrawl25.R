@@ -1,10 +1,10 @@
 library(dplyr)
 #generate from accessdb, will have to update query annually
-load(file.path(Sys.getenv("VPATH"), "weakfish.RData"))
+load(file.path(Sys.getenv("VCOMPLIANCE"), "weakfish.RData"))
 tows$STATION <- as.character(tows$STATION)
 
 #2025 Data
-headcatch <- read.csv(file.path(Sys.getenv("VPATH"),"report/species/weakfish/detrawl/HEADCATCH.csv"))
+headcatch <- read.csv(file.path(Sys.getenv("VCOMPLIANCE"),"detrawl/HEADCATCH.csv"))
 headcatch$DATE <- as.Date(headcatch$DATE, format="%m/%d/%Y")
 headcatch[headcatch$SALINITY=="N/A",]$SALINITY <- NA
 headcatch$SALINITY <- as.numeric(headcatch$SALINITY)
@@ -15,7 +15,7 @@ headcatch$DO <- as.numeric(headcatch$DO)
 headcatch[headcatch$pH=="N/A",]$pH <- NA
 headcatch$pH <- as.numeric(headcatch$pH)
 
-lengths <- read.csv(file.path(Sys.getenv("VPATH"),"report/species/weakfish/detrawl/LENGTHS.csv"))
+lengths <- read.csv(file.path(Sys.getenv("VCOMPLIANCE"),"detrawl/LENGTHS.csv"))
 lengths$DATE <- as.Date(lengths$DATE, format="%m/%d/%Y")
 
 geom_mean <- function(x) {
