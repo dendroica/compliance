@@ -1,6 +1,6 @@
 #open powershell
 #cd to where this script is
-#"C:\Program Files\R\R-4.1.3\bin\Rscript.exe" <path to here> db.R
+#"C:\Program Files\R\R-4.1.3\bin\Rscript.exe" db.R
 library(RODBC)
 
 detrawl <- file.path(Sys.getenv("VIN"), "Delaware Bay Finfish Trawl Survey/DBTrawl1991-2025_10-01-2026.accdb")
