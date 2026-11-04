@@ -1,6 +1,6 @@
 library(dplyr)
 #generate from accessdb, will have to update query annually
-load(file.path(Sys.getenv("VCOMPLIANCE"), "weakfish.RData"))
+load(file.path(Sys.getenv("VCOMPLIANCE"), "detrawl/weakfish.RData"))
 tows$STATION <- as.character(tows$STATION)
 
 #2025 Data
