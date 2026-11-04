@@ -1,6 +1,3 @@
-#open powershell
-#cd to where this script is
-#"C:\Program Files\R\R-4.1.3\bin\Rscript.exe" db.R
 library(RODBC)
 
 #update filepath below with the current filename
