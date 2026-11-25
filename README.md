@@ -7,7 +7,7 @@ You need my .Renviron file to get the paths
 1. you may have to edit the database name
 2. open powershell
 3. cd to where your R-4.1.3 install is (for me it's "C:\Program Files\R\R-4.1.3\bin")
-4. run this line: .\Rscript.exe (full path to) db.R  
+4. run this line: `.\Rscript.exe (full path to) db.R  `
 
 ## 2. Generate the report
 **spp.Rmd**: Used to fill out...  
