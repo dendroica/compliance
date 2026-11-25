@@ -3,7 +3,7 @@
 You need my .Renviron file to get the paths  
 
 ## 1. Pull the Delaware Bay Trawl data
-**db.R**: you must run this with R-4.1.3
+**db.R**: you must run this with [R-4.1.3](https://cran-archive.r-project.org/bin/windows/base/old/4.1.3/)
 1. you may have to edit the database name
 2. open powershell
 3. cd to where your R-4.1.3 install is (for me it's "C:\Program Files\R\R-4.1.3\bin")
